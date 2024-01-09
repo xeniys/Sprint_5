@@ -1,12 +1,12 @@
 import pytest
 from selenium import webdriver
-from constants import Constants
+from constants import Urls
 
 
 @pytest.fixture
 def driver():
     driver = webdriver.Chrome()
-    driver.get(Constants.URL)
+    driver.get(Urls.URL)
     yield driver
     driver.quit()
 

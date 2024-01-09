@@ -1,5 +1,21 @@
 В данном проекте реализованы автотесты для сервиса Stellar Burgers - https://stellarburgers.nomoreparties.site/
 
+
+Для запуска проекта требуется установка следующих фреймворков:
+
+- pytest
+
+pip install pytest
+
+- selenium
+
+pip install selenium
+
+Далее нужно установить подходящий браузер, можно воспользоваться инструкцией:
+
+https://www.kushalstudy.com/blog/how-to-install-chrome-webdriver-in-selenium-python/
+
+
 Тесты: 
 
 - Файл test_registration.py содержит класс class TestRegistration:
@@ -24,4 +40,8 @@
   - def test_constructor_toppings_transition() - переход к разделу "Начинки"
 
 В файле constants.py содержатся константы, используемые в тестах, а в файле locators.py - все локаторы с описаниями.
+
+
+Для запуска проекта:
+
 

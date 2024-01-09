@@ -2,8 +2,8 @@ from selenium.webdriver.common.by import By
 
 
 class Locators:
-    REG_NAME_INPUT = (By.XPATH, './/input[@name = "name"]')  # поле ввода имени на странице регистрации
-    REG_EMAIL_INPUT = (By.XPATH, './/fieldset[2]/div/div/input[@name = "name"]')  # поле ввода email на странице
+    REG_NAME_INPUT = (By.XPATH, '//label[text()="Имя"]/following-sibling::*')  # поле ввода имени на странице регистрации
+    REG_EMAIL_INPUT = (By.XPATH, '//label[text()="Email"]/following-sibling::*')  # поле ввода email на странице
     # регистрации
     REG_PASSWORD_INPUT = (By.XPATH, './/input[@name = "Пароль"]')  # поле ввода пароля на странице регистрации
     REG_BUTTON = (By.XPATH, './/button[text() = "Зарегистрироваться"]')  # кнопка "Зарегистрироваться" на странице
@@ -31,14 +31,8 @@ class Locators:
     LOGO_BUTTON = (By.XPATH, './/a[@href="/"]') # кнопка лого в хедере
     LOGOUT_BUTTON = (By.XPATH, './/button[text()="Выход"]') # кнопка "Выход" в личном кабинете
 
-    BUNS_BUTTON = (By.XPATH, './/span[text()="Булки"]') # кнопка "Булки" в конструкторе
-    SAUCES_BUTTON = (By.XPATH, './/span[text()="Соусы"]') # кнопка "Соусы" в конструкторе
-    TOPPINGS_BUTTON = (By.XPATH, './/span[text()="Начинки"]') # кнопка "Начинки" в конструкторе
+    BUNS_BUTTON = (By.XPATH, '//span[text()="Булки"]/parent::*') # кнопка "Булки" в конструкторе
+    SAUCES_BUTTON = (By.XPATH, '//span[text()="Соусы"]/parent::*') # кнопка "Соусы" в конструкторе
+    TOPPINGS_BUTTON = (By.XPATH, '//span[text()="Начинки"]/parent::*') # кнопка "Начинки" в конструкторе
 
-    BUNS_H2 = (By.XPATH, './/h2[text()="Булки"]') # раздел "Булки" в ленте конструктора
-    SAUCES_H2 = (By.XPATH, './/h2[text()="Соусы"]') # раздел "Соусы" в ленте конструктора
-    TOPPINGS_H2 = (By.XPATH, './/h2[text()="Начинки"]') # раздел "Начинки" в ленте конструктора
-
-    BUN = (By.XPATH, './/p[text()="Флюоресцентная булка R2-D3"]') # товар в булках
-    SAUCE = (By.XPATH, './/p[text()="Соус Spicy-X"]') # товар в соусах
-    TOPPING = (By.XPATH, './/p[text()="Мясо бессмертных моллюсков Protostomia"]') # товар в начинках
+    SELECTED_BUTTON = (By.XPATH, '//class="tab_tab__1SPyG tab_tab_type_current__2BEPc pt-4 pr-10 pb-4 pl-10 noselect"')
