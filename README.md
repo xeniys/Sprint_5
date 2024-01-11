@@ -42,6 +42,3 @@ https://www.kushalstudy.com/blog/how-to-install-chrome-webdriver-in-selenium-pyt
 В файле constants.py содержатся константы, используемые в тестах, а в файле locators.py - все локаторы с описаниями.
 
 
-Для запуска проекта:
-
-
